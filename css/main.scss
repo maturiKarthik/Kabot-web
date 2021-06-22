@@ -1,0 +1,284 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.search {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+  place-content: space-evenly;
+  border: 1px solid blue;
+  background-color: #4261b5;
+  border-radius: 5px;
+  font-size: 0.7em;
+  width: 70px;
+  height: 30px;
+  padding-right: 0.1em;
+  margin-right: 0.8em;
+}
+.hero {
+  margin: 0.7em;
+  padding: 1em;
+  display: flex;
+  place-content: space-between;
+  align-items: center;
+
+  .logo {
+    a {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      place-content: space-between;
+
+      h2 {
+        font-weight: bolder;
+        color: #641adb;
+        font-size: 1.8em;
+        line-height: 0.4em;
+        margin-left: 0.3em;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      .custom_button {
+        display: flex;
+        align-items: center;
+        place-content: space-evenly;
+        border: 1px solid blue;
+        background-color: #4261b5;
+        border-radius: 5px;
+        width: 100px;
+        height: 40px;
+      }
+    }
+    li {
+      cursor: pointer;
+      font-family: "Poppins", sans-serif;
+      font-size: 0.7em;
+      font-weight: bold;
+      color: #0d0101;
+      list-style: none;
+      margin-right: 4.5em;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: royalblue;
+        text-decoration-thickness: 0.4em;
+      }
+    }
+  }
+}
+
+section {
+  margin: 2em;
+}
+
+.main {
+  display: flex;
+  place-content: space-evenly;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  justify-content: center;
+
+  .left_col {
+    justify-content: left;
+    width: 300px;
+    .t1 {
+      color: #f4998d;
+      font-size: 0.7em;
+      font-weight: normal;
+    }
+    .t2 {
+      color: #2a0b5b;
+      font-size: 2.5em;
+      font-weight: 950px;
+      line-height: 1em;
+
+      span {
+        color: #99b12f;
+      }
+    }
+    .t3 {
+      color: #655959;
+      font-size: 0.9em;
+      font-weight: normal;
+    }
+    .search_area {
+      display: flex;
+      align-items: center;
+      place-content: space-between;
+      input {
+        border: 2px solid #2a0b5b;
+        height: 34px;
+        width: 190px;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .right_col {
+    display: flex;
+    flex-direction: row;
+    img {
+      width: 500px;
+      height: 500px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        place-content: space-evenly;
+        margin-bottom: 3em;
+        width: 110px;
+        h1 {
+          justify-content: left;
+          font-family: "Staatliches", cursive;
+          font-size: 1.4em;
+          line-height: 2em;
+          color: #0b0d01;
+          font-weight: bolder;
+          font-weight: 600px;
+          text-decoration: underline;
+          line-height: 0.4em;
+          text-decoration-thickness: 5px;
+          text-decoration-color: #a78442;
+        }
+        span {
+          font-size: 0.7em;
+          padding: 0.7em;
+          color: #655959;
+          overflow-wrap: break-word;
+        }
+      }
+    }
+  }
+}
+
+/** secnd **/
+.secnd {
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins", sans-serif;
+  .left_col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card {
+      margin-top: 4em;
+      display: flex;
+      align-items: center;
+      width: 240px;
+      height: 80px;
+      border-radius: 10px;
+      background-color: #7181de;
+
+      p {
+        font-size: 0.9em;
+        padding: 1em;
+        font-weight: bold;
+        color: #fafafa;
+      }
+
+      &::after {
+        position: absolute;
+        margin-left: 12em;
+        content: url("/assets/fox.png");
+        z-index: 5px;
+      }
+    }
+
+    ul {
+      margin-top: 1.5em;
+      background-color: #f0eded;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      place-content: center;
+      padding: 1em;
+
+      li {
+        margin: 0%;
+        padding: 0%;
+        list-style: none;
+        margin-top: 2em;
+        border: 1px solid #242323;
+        border-radius: 15px;
+        text-align: center;
+        width: 260px;
+        height: 140px;
+        p {
+          font-size: 0.5em;
+          color: #655959;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  .right_col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .first_1 {
+      width: 400px;
+      height: 150px;
+      margin-top: 2em;
+      .title {
+        font-size: 2.3em;
+        font-weight: bolder;
+        line-height: 1.3em;
+        word-spacing: 0.1em;
+
+        color: black;
+        span {
+          color: #7181de;
+        }
+      }
+
+      .sub_title {
+        color: #7181de;
+        font-size: 0.7em;
+      }
+    }
+
+    ul {
+      display: flex;
+      margin-top: 10em;
+
+      li {
+        list-style: none;
+        margin-right: 2em;
+        img {
+          border-radius: 15px;
+          width: 140px;
+          height: 180px;
+        }
+      }
+    }
+  }
+}
